@@ -16,6 +16,8 @@ public class Topic {
     private boolean complete;
     private Date creationDate;
     private Date completionDate;
+    private Date alarm;
+    private boolean status;
 
     public Topic(){
 
@@ -76,5 +78,21 @@ public class Topic {
 
     public void setCompletionDate(Date completionDate) {
         this.completionDate = completionDate;
+    }
+
+    public Date getAlarm() {
+        return alarm;
+    }
+
+    public void setAlarm(Date alarm) {
+        this.alarm = alarm;
+    }
+
+    public boolean isStatus() {
+        return status;
+    }
+
+    public void setStatus(boolean status) {
+        this.status = status;
     }
 }
